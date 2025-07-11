@@ -50,20 +50,17 @@ File Structure
  ┣ 📄script.js
  ┗ 📄README.md
 
-Demo
+## Demo
 Live version available at:
 [https://hellrainy.github.io/modal-window-project/](https://hellrainy.github.io/modal-window-animation-practice/)
 
-Technologies Used
+## Technologies Used
 HTML5
-
 CSS3 (Flexbox, gradients, layering)
-
 JavaScript (DOM interaction, event handling, animation)
-
 Animated images (GIF and PNG)
 
-Author
+##Author
 Created by Hellrain / Артур Целищев
 
 GIF by @ioanasopov on giphy.com
