@@ -5,7 +5,7 @@ const overlay = document.querySelector('.modal-overlay');
 const headImg = document.getElementById('head-img');
 
 let state = 'idle';
-let explosionDelay = 2255;
+let explosionDelay = 2260;
 let returnDelay = 1200;
 
 openBtn.addEventListener('click', () => {
