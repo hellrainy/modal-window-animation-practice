@@ -12,15 +12,15 @@ openBtn.addEventListener('click', () => {
   if (state !== 'idle') return;
   state = 'exploding';
 
-  headImg.src = 'img/explosion.gif';
+  headImg.src = 'img/explosion-ts.gif';
 
   setTimeout(() => {
     overlay.classList.add('show');
-    headImg.src = 'img/return.gif';
+    headImg.src = 'img/return-ts.gif';
     state = 'returning';
 
     setTimeout(() => {
-      headImg.src = 'img/head.png';
+      headImg.src = 'img/head-ts.png';
       state = 'idle';
     }, returnDelay);
 
@@ -31,12 +31,31 @@ closeBtn.addEventListener('click', () => {
   overlay.classList.remove('show');
 });
 
+// Close modal when clicking outside the content area
+overlay.addEventListener('click', (event) => {
+  if (event.target === overlay) {
+    overlay.classList.remove('show');
+  }
+});
+
+// Close modal when pressing Escape key
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && overlay.classList.contains('show')) {
+    overlay.classList.remove('show');
+  }
+});
+
 // Typewriter effect for .advice
 function typeText(paragraph, text, speed, callback) {
   paragraph.textContent = '';
   paragraph.style.visibility = 'visible';
   const span = document.createElement('span');
   paragraph.appendChild(span);
+
+  if (paragraph.hasAttribute('data-bold')) {
+    span.style.fontWeight = '700';
+    }
+
   let i = 0;
 
   const interval = setInterval(() => {
