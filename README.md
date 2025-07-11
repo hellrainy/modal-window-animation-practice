@@ -65,5 +65,7 @@ Animated images (GIF and PNG)
 
 Author
 Created by Hellrain / Артур Целищев
+
 GIF by @ioanasopov on giphy.com
+
 This project was developed as part of a self-learning path in frontend development.
