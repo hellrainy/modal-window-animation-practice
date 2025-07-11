@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff3333" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>Модалка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Modal window.</h1>
+    </header>
+
+    <main class="main">
+      <div class="modal-trigger">
+        <button class="open-modal">
+          <img id="head-img" src="img/head.png" alt="Голова" />
+        </button>
+        <div class="advice">
+          <p>Привет!</p>
+          <p>Я модалка.</p>
+          <p><strong>Нажми на меня!</strong></p>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2>Модальное окно</h2>
+        <p>
+          Тут можно разместить любой контент: текст, кнопки, формы, изображение
+          и т.д.
+        </p>
+        <button class="close-modal">Закрыть</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 Hellrain</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
