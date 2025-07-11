@@ -56,11 +56,14 @@ Live version available at:
 
 ## Technologies Used
 HTML5
+
 CSS3 (Flexbox, gradients, layering)
+
 JavaScript (DOM interaction, event handling, animation)
+
 Animated images (GIF and PNG)
 
-##Author
+## Author
 Created by Hellrain / Артур Целищев
 
 GIF by @ioanasopov on giphy.com
