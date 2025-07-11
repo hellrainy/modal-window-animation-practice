@@ -38,8 +38,8 @@ setTimeout(() => {
 }, 1000);
 ```
 
-File Structure
-
+## File Structure
+```
 📦modal-window-project
  ┣ 📂img
  ┃ ┣ 📄head-ts.png
@@ -49,7 +49,7 @@ File Structure
  ┣ 📄style.css
  ┣ 📄script.js
  ┗ 📄README.md
-
+```
 ## Demo
 Live version available at:
 [https://hellrainy.github.io/modal-window-project/](https://hellrainy.github.io/modal-window-animation-practice/)
