@@ -1,3 +1,4 @@
+/* === ОБЩИЕ СБРОСЫ И НАСТРОЙКИ ================================== */
 html,
 body {
   max-width: 100vw;
@@ -8,20 +9,21 @@ body {
   box-sizing: border-box;
 }
 
+/* === ОСНОВНОЕ ТЕЛО СТРАНИЦЫ =================================== */
 body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  background: linear-gradient(to top, #fd6702, 50%, #5233ff);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  background: linear-gradient(to top, #fd6702, 50%, #5233ff);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
 }
 
-
+/* === ШАПКА =================================================== */
 .header {
   padding: 55px;
   text-align: center;
@@ -32,13 +34,15 @@ body {
   font-size: 38px;
 }
 
+/* === ОСНОВНОЙ КОНТЕНТ ======================================== */
 .main {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
+/* === КНОПКА-МОДАЛКА И ПОДСКАЗКА ============================== */
 .modal-trigger {
   position: relative;
   display: inline-block;
@@ -47,9 +51,9 @@ body {
 .open-modal {
   position: relative;
   z-index: 10;
+  padding: 0;
   background: transparent;
   border: none;
-  padding: 0;
   cursor: pointer;
 }
 
@@ -58,22 +62,21 @@ body {
   max-width: 100%;
 }
 
-
 .advice {
   position: absolute;
-  z-index: 1;
   top: -25px;
-  left: 15px;
   right: 50%;
+  left: 15px;
+  z-index: 1;
   margin: 0 auto;
-  max-width: 90vw;
-  pointer-events: none;
-  color: rgb(255, 255, 255);
   padding: 10px;
   font-size: 16px;
   line-height: 1.4;
   text-align: left;
+  color: rgb(255 255 255);
   box-sizing: border-box;
+  max-width: 90vw;
+  pointer-events: none;
 }
 
 .advice p {
@@ -82,6 +85,7 @@ body {
   white-space: pre-wrap;
 }
 
+/* === ПОДВАЛ ================================================== */
 .footer {
   padding: 80px;
   font-size: 16px;
@@ -89,21 +93,21 @@ body {
   color: #fff;
 }
 
-/* Modal window */
+/* === МОДАЛЬНОЕ ОКНО ========================================== */
 .modal-overlay {
   position: fixed;
-  z-index: 999;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 30%);
   opacity: 0;
-  visibility: hidden;
   transition: opacity 0.4s ease, visibility 0.4s ease;
+  visibility: hidden;
 }
 
 .modal-overlay.show {
@@ -114,22 +118,22 @@ body {
 .modal {
   position: relative;
   z-index: 1000;
-  background: white;
-  color: black;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  max-width: 400px;
   width: 90%;
+  padding: 30px 40px;
+  text-align: center;
+  color: black;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgb(0 0 0 / 30%);
   box-sizing: border-box;
+  max-width: 400px;
 }
 
 .close-modal {
   width: 30%;
   height: 30px;
-  color: rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
+  color: rgb(255 255 255);
+  background: rgb(0 0 0);
   border-radius: 5px;
   cursor: pointer;
 }
