@@ -39,6 +39,7 @@ setTimeout(() => {
 ```
 
 ## File Structure
+
 ```
 📦modal-window-project
  ┣ 📂img
@@ -50,11 +51,14 @@ setTimeout(() => {
  ┣ 📄script.js
  ┗ 📄README.md
 ```
+
 ## Demo
+
 Live version available at:
 [https://hellrainy.github.io/modal-window-project/](https://hellrainy.github.io/modal-window-animation-practice/)
 
 ## Technologies Used
+
 HTML5
 
 CSS3 (Flexbox, gradients, layering)
@@ -64,6 +68,7 @@ JavaScript (DOM interaction, event handling, animation)
 Animated images (GIF and PNG)
 
 ## Author
+
 Created by Hellrain / Артур Целищев
 
 GIF by @ioanasopov on giphy.com
