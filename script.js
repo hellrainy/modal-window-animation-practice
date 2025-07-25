@@ -29,12 +29,14 @@ openBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
   overlay.classList.remove('show');
+  state = 'idle';
 });
 
 // Close modal when clicking outside the content area
 overlay.addEventListener('click', (event) => {
   if (event.target === overlay) {
     overlay.classList.remove('show');
+    state = 'idle';
   }
 });
 
@@ -42,6 +44,7 @@ overlay.addEventListener('click', (event) => {
 window.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && overlay.classList.contains('show')) {
     overlay.classList.remove('show');
+    state = 'idle';
   }
 });
 
